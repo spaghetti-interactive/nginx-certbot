@@ -31,3 +31,14 @@ Feel free to post questions in the comment section of the [accompanying guide](h
 
 ## License
 All code in this repository is licensed under the terms of the `MIT License`. For further information please refer to the `LICENSE` file.
+
+
+
+#Giochipiu
+
+Add new website:
+- Create .conf file under data/nginx
+- edit init-letsencrypt.sh with new domain
+- make sure you've added only the new domain website config and all nginx configurations is well formed before launching next command
+- execute sudo ./init-letsencrypt.sh
+- docker-compose down && docker-compose up -d
