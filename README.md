@@ -41,4 +41,6 @@ Add new website:
 - edit init-letsencrypt.sh with new domain
 - make sure you've added only the new domain website config and all nginx configurations is well formed before launching next command
 - execute sudo ./init-letsencrypt.sh
+
+if needed execute to restart docker
 - docker-compose down && docker-compose up -d
