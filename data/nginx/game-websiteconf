@@ -1,0 +1,53 @@
+server {
+        listen 80;
+
+        server_name
+                assopigliapiu.it
+                briscamas.es
+                briscolapiu.it
+                buracoplus.com
+                burracopiu.it
+                checkersplus.com
+                chessgame.online
+                chessplus.giochipiu.it
+                damapiu.it
+#                escobamas.es
+#                rubamazzopiu.it
+                scacchipiu.it
+                scopapiu.it
+                scoponepiu.it
+                scala40piu.it
+                traversonepiu.it
+                tressettepiu.it
+                www.assopigliapiu.it
+                www.briscamas.es
+                www.briscolapiu.it
+                www.buracoplus.com
+                www.burracopiu.it
+                www.checkersplus.com
+                www.chessgame.online
+                www.damapiu.it
+#                www.escobamas.es
+#                www.rubamazzopiu.it
+                www.scacchipiu.it
+                www.scopapiu.it
+                www.scoponepiu.it
+                www.scala40piu.it
+                www.traversonepiu.it
+                www.tressettepiu.it;
+
+    server_tokens off;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+        location / {
+                proxy_pass http://162.55.99.126:4733;
+                proxy_set_header Host $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                proxy_set_header X-NginX-Proxy true;
+                proxy_set_header X-Real-IP $remote_addr;
+        }
+}
