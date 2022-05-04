@@ -17,8 +17,8 @@ server {
 
 #    ssl_certificate /etc/letsencrypt/live/staging.spaghetti-interactive.it/spaghetti-interactive.it.chained.crt;
 #    ssl_certificate_key /etc/letsencrypt/live/staging.spaghetti-interactive.it/spaghetti-interactive.it.key;
-    ssl_certificate /etc/letsencrypt/live/traversonepiu.it/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/traversonepiu.it/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/staging.spaghetti-interactive.it/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/staging.spaghetti-interactive.it/privkey.pem;
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
