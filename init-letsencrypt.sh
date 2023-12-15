@@ -7,7 +7,7 @@ fi
 
 #domains=(example.org www.example.org)
 # domains=(solitaireplus.net www.solitaireplus.net)
-domains=(giochipiu.it www.giochipiu.it)
+domains=(assopigliapiu.it www.assopigliapiu.it)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="giochipiu@gmail.com" # Adding a valid address is strongly recommended
