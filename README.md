@@ -37,7 +37,7 @@ All code in this repository is licensed under the terms of the `MIT License`. Fo
 #Giochipiu
 
 Add new website:
-- Create .conf file under data/nginx
+- Create .conf file under data/nginx (es: cp ./data/nginx_websites ./data/nginx)
 - edit init-letsencrypt.sh with new domain
 - make sure you've added only the new domain website config and all nginx configurations is well formed before launching next command
 - execute sudo ./init-letsencrypt.sh
