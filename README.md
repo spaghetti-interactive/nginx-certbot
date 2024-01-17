@@ -44,3 +44,5 @@ Add new website:
 
 if needed execute to restart docker
 - docker-compose down && docker-compose up -d
+
+rotate logs: https://alexanderzeitler.com/articles/rotating-nginx-logs-with-docker-compose/
