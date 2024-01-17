@@ -1,0 +1,14 @@
+/srv/apps/nginx-certbot/data/logs/*.log {
+  daily
+  missingok
+  rotate 31
+  dateext
+  compress
+  delaycompress
+  notifempty
+  sharedscripts
+  postrotate
+    cd /srv/apps/nginx-certbot \
+      && /usr//bin/docker compose kill -s USR1 nginx
+  endscript
+}
