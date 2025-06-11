@@ -1,13 +1,29 @@
 #!/bin/bash
 
-if ! [ -x "$(command -v docker-compose)" ]; then
-  echo 'Error: docker-compose is not installed.' >&2
+domains=$1
+
+if [ -z "$1" ]
+  then
+    echo "No argument supplied"
+    exit 1
+fi
+if [ -z "$domains" ]; then
+  echo "Usage: $0 domain1 [domain2 ...]"
   exit 1
 fi
+# Check if docker-compose is installed
+if ! [ -x "$(command -v docker)" ]; then
+  echo 'Error: Docker is not installed.' >&2
+  exit 1
+fi
+# if ! [ -x "$(command -v docker-compose)" ]; then
+#   echo 'Error: docker-compose is not installed.' >&2
+#   exit 1
+# fi
 
 #domains=(example.org www.example.org)
 # domains=(solitaireplus.net www.solitaireplus.net)
-domains=(prometheus.giochipiu.it)
+# domains=(prometheus.giochipiu.it)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="giochipiu@gmail.com" # Adding a valid address is strongly recommended
