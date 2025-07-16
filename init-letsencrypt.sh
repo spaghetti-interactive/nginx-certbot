@@ -22,7 +22,7 @@ fi
 # fi
 
 #domains=(example.org www.example.org)
-# domains=(solitaireplus.net www.solitaireplus.net)
+domains=(gregorihouse.it www.gregorihouse.it)
 # domains=(prometheus.giochipiu.it)
 rsa_key_size=4096
 data_path="./data/certbot"
