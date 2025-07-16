@@ -38,9 +38,9 @@ All code in this repository is licensed under the terms of the `MIT License`. Fo
 
 Add new website:
 - Create .conf file under data/nginx (es: mkdir ./data/nginx && cp -R ./data/nginx_srv_dockprom/* ./data/nginx)
-- edit init-letsencrypt.sh with new domain
+<!-- - edit init-letsencrypt.sh with new domain -->
 - make sure you've added only the new domain website config and all nginx configurations is well formed before launching next command
-- execute sudo ./init-letsencrypt.sh
+- execute sudo ./init-letsencrypt.sh domain.ext
 
 if needed execute to restart docker
 - docker-compose down && docker-compose up -d
