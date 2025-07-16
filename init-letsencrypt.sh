@@ -1,25 +1,25 @@
 #!/bin/bash
 
-domains=$1
+# domains=$1
 
-if [ -z "$1" ]
-  then
-    echo "No argument supplied"
-    exit 1
-fi
-if [ -z "$domains" ]; then
-  echo "Usage: $0 domain1 [domain2 ...]"
-  exit 1
-fi
-# Check if docker-compose is installed
-if ! [ -x "$(command -v docker)" ]; then
-  echo 'Error: Docker is not installed.' >&2
-  exit 1
-fi
-# if ! [ -x "$(command -v docker-compose)" ]; then
-#   echo 'Error: docker-compose is not installed.' >&2
+# if [ -z "$1" ]
+#   then
+#     echo "No argument supplied"
+#     exit 1
+# fi
+# if [ -z "$domains" ]; then
+#   echo "Usage: $0 domain1 [domain2 ...]"
 #   exit 1
 # fi
+# # Check if docker-compose is installed
+# if ! [ -x "$(command -v docker)" ]; then
+#   echo 'Error: Docker is not installed.' >&2
+#   exit 1
+# fi
+# # if ! [ -x "$(command -v docker-compose)" ]; then
+# #   echo 'Error: docker-compose is not installed.' >&2
+# #   exit 1
+# # fi
 
 #domains=(example.org www.example.org)
 domains=(gregorihouse.it www.gregorihouse.it)
